@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>寒暄的小网页</title>
+  </head>
+  <!-- 首页 -->
+<body>
+    <style>
+* {
+  box-sizing: border-box;
+}
+ 
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8da1f8;
+}
+
+        .nav{
+            width: 1200px;
+            height: 70px;
+            position: relative;
+            top: 2px;
+            box-shadow: 0 5px 20px rgb(0,0,0,0.5);
+            border-radius: 10px;
+            background-color: #fff;
+            margin: 10px;
+        }
+        .nav ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            right: 5%;
+        }
+        .nav ul .nav-box{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* 如果导航栏就六个导航，那么每个导航的宽度都是整个导航的六分之一 */
+            width: calc((100% / 6)*1);
+            height: 10px;
+            border-radius: 2px;
+            transition: .5s;
+        }
+        .nav ul li{
+            width: 100%;
+            text-align: center;
+        }
+        .nav ul li a{
+            color: rgb(70, 100, 180);
+            font: 100 30px '优设标题黑';
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: 70px;
+        }
+        .nav ul li:nth-child(1):hover~.nav-box{
+            left: calc(100% / 6 *0);
+            background-color: rgb(250, 190, 250);
+        }
+        .nav ul li:nth-child(2):hover~.nav-box{
+            left: calc(100% / 6 *1);
+            background-color: red;
+        }
+        .nav ul li:nth-child(3):hover~.nav-box{
+            left: calc(100% / 6 *2);
+            background-color: #d18df8;
+        }
+        .nav ul li:nth-child(4):hover~.nav-box{
+            left: calc(100% / 6 *3);
+            background-color: #ffb1b1;
+        }
+        .nav ul li:nth-child(5):hover~.nav-box{
+            left: calc(100% / 6 *4);
+            background-color: #8da1f8;
+        }
+        .nav ul li:nth-child(6):hover~.nav-box{
+            left: calc(100% / 6 *5);
+            background-color: #7df88e;
+        }
+
+
+.zhuYe {
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+ 
+ 
+/* 图像部分 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+ 
+/* 文章卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  width: 1200px;
+  margin: 10px;
+}
+ 
+ 
+/* 底部 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  margin-top: 20px;
+  width: 1200px;
+  margin: 10px;
+}
+ 
+.tou {
+    background-color:white;
+    text-align: start;
+    padding: 50px;
+    margin-top: 10px;
+    width: 1200px;
+    margin: 10px;
+}
+
+.center{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+      }
+
+    </style>
+
+    <!--导航栏-->
+    <div class="center">
+      <div class="nav">
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#project">项目</a></li>
+            <li><a href="#about">关于</a></li>
+            <li><a href="#cm">联系</a></li>
+            <li><a href="#">VUE</a></li>
+            <li><a href="#">PHP</a></li>
+            <div class="nav-box"></div>
+        </ul>
+    </div>
+    </div>
+    
+
+	<p></p>
+
+</body>
+
+<body>
+    
+    <div class="center">
+<!--主页-->
+    <div class="tou">
+        <p id="home"></p>
+        <img src="logo1.jpg" alt="伊蕾娜" width="80px" height="80px">
+        <div class="zhuYe">
+            <p>我是寒暄....</p>
+        </div>
+    </div>
+
+      <div class="neiRong">
+        <div class="card">
+          <p id="project"></p>
+          <h2>项目</h2>
+          <div class="fakeimg" style="height:200px;width: 500px;">图片</div>
+          <p>一些文本...</p>
+          <p>一些文本.....</p>
+          <p>一些文本.....</p>
+          <p>一些文本.....</p>
+          <p>一些文本.....</p>
+          <p>一些文本.....</p>
+          <p>一些文本.....</p>
+        </div>
+  </div>
+  
+
+  
+
+  <div class="card">
+      <p id="about"></p>
+      <h2>关于</h2>
+          <p>你好啊~</p>
+          <p>我是寒暄</p>
+          <p>欢迎来到我的网站</p>
+          <p>这是我的Re01初学演示</p>
+          <p>一些文本.....</p>
+          <p>一些文本.....</p>
+          <p>一些文本.....</p>
+          <p>一些文本.....</p>
+          <p>一些文本.....</p>
+</div>
+    </div>
+        
+
+</body>
+
+<body>
+  <div class="center">
+    <div class="footer">
+      <p id="cm"></p>
+      <p>&copy; hanxuan 2024</p>
+      <a href="https://qm.qq.com/q/Om6B10Q7M6">友情链接</a>
+      <p>粤ICP备xxx号-1</p>
+      <p>粤公网安备 xxxxxx号</p>
+    </div>
+  <div></div>
+  </div>
+    
+</body>
+
+</html>
